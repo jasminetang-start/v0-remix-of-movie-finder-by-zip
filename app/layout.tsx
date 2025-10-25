@@ -1,52 +1,32 @@
 import type React from "react"
 import type { Metadata } from "next"
-import localFont from "next/font/local"
+import { Inter, Oswald, Noto_Sans_SC, Poppins } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 
-const myriadPro = localFont({
-  src: [
-    {
-      path: "../public/fonts/MyriadPro-Regular.woff2",
-      weight: "400",
-      style: "normal",
-    },
-    {
-      path: "../public/fonts/MyriadPro-Bold.woff2",
-      weight: "700",
-      style: "normal",
-    },
-  ],
-  variable: "--font-myriad",
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
   display: "swap",
 })
 
-const impact = localFont({
-  src: "../public/fonts/Impact.woff2",
-  variable: "--font-impact",
+const oswald = Oswald({
+  subsets: ["latin"],
+  variable: "--font-oswald",
   display: "swap",
 })
 
-const chineseTitle = localFont({
-  src: "../public/fonts/ZiyuAijiaGongluTi.woff2",
-  variable: "--font-chinese-title",
+const notoSansSC = Noto_Sans_SC({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-noto-sans-sc",
   display: "swap",
 })
 
-const hkSentiments = localFont({
-  src: [
-    {
-      path: "../public/fonts/HKSentiments-Regular.woff2",
-      weight: "400",
-      style: "normal",
-    },
-    {
-      path: "../public/fonts/HKSentiments-Bold.woff2",
-      weight: "700",
-      style: "normal",
-    },
-  ],
-  variable: "--font-hk-sentiments",
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "600", "700"],
+  variable: "--font-poppins",
   display: "swap",
 })
 
@@ -64,7 +44,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${hkSentiments.variable} ${impact.variable} ${myriadPro.variable} ${chineseTitle.variable} font-sans antialiased`}
+        className={`${inter.variable} ${oswald.variable} ${poppins.variable} ${notoSansSC.variable} font-sans antialiased`}
       >
         {children}
         <Analytics />
