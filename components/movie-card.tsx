@@ -1,3 +1,5 @@
+"use client"
+
 import { Clock, Star, MapPin } from "lucide-react"
 import { Card, CardContent, CardFooter } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -19,8 +21,37 @@ interface MovieCardProps {
 }
 
 export function MovieCard({ movie }: MovieCardProps) {
+  const trackCardClick = async () => {
+    try {
+      const scriptUrl = process.env.NEXT_PUBLIC_GOOGLE_SCRIPT_URL
+
+      if (!scriptUrl) {
+        console.warn("[v0] Google Script URL not configured")
+        return
+      }
+
+      const params = new URLSearchParams({
+        element_name: movie.title,
+        element_type: "movie_card",
+        page_url: window.location.href,
+        user_agent: navigator.userAgent,
+        referrer: document.referrer || "direct",
+      })
+
+      await fetch(`${scriptUrl}?${params.toString()}`, {
+        method: "POST",
+        mode: "no-cors",
+      })
+    } catch (error) {
+      console.error("[v0] Failed to track card click:", error)
+    }
+  }
+
   return (
-    <Card className="group overflow-hidden transition-all hover:shadow-lg hover:shadow-primary/10">
+    <Card
+      className="group overflow-hidden transition-all hover:shadow-lg hover:shadow-primary/10 cursor-pointer"
+      onClick={trackCardClick}
+    >
       <CardContent className="p-4">
         <div className="mb-3 flex items-start justify-between gap-2">
           <h3 className="text-xl font-bold text-foreground line-clamp-2" style={{ fontFamily: "Impact, sans-serif" }}>
