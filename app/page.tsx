@@ -100,7 +100,7 @@ export default function MovieResearchPage() {
       <header className="border-b border-border bg-card">
         <div className="container mx-auto px-4 py-6">
           <div className="flex items-center gap-3">
-            <Image src="/start-logo.png" alt="STArt Film Studio Logo" width={56} height={56} className="h-14 w-14" />
+            <Image src="/movie-finder-by-city/start-logo.png" alt="STArt Film Studio Logo" width={56} height={56} className="h-14 w-14" />
             <h1 className="text-2xl font-bold text-foreground" style={{ fontFamily: "Myriad Pro, sans-serif" }}>
               STArt Film Studio
             </h1>
