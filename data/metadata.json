@@ -1,11 +1,17 @@
 {
-  "last_updated": "2025-11-01T00:41:10.421270",
+  "last_updated": "2025-11-01T06:15:30.684577",
   "total_movies": 10,
   "cinemas": {
     "siff": {
       "movie_count": 10,
-      "last_scraped": "2025-11-01T00:40:17.085146",
+      "last_scraped": "2025-11-01T06:14:37.159462",
       "status": "success"
+    },
+    "viff": {
+      "movie_count": 0,
+      "last_scraped": "2025-11-01T06:15:30.683306",
+      "status": "failed",
+      "error": "Unknown scraper: viff"
     }
   }
 }

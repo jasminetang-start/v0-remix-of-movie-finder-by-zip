@@ -1,6 +1,172 @@
 [
   {
     "movie": {
+      "title": "One Battle After Another",
+      "url": "https://www.siff.net/cinema/in-theaters/one-battle-after-another",
+      "image_url": "https://www.siff.net/images/CINEMA/2025/Film%20Jun-Dec/CIN_OneBattleAfterAnother_1600x900.jpg",
+      "country": "USA",
+      "year": 2025,
+      "duration": 161,
+      "director": "Paul Thomas Anderson",
+      "imdb_id": "tt30144839",
+      "plot": "When their evil enemy resurfaces after 16 years, a group of ex-revolutionaries reunite to rescue the daughter of one of their own.",
+      "genre": "Action, Crime, Drama",
+      "rated": "R",
+      "actors": "Leonardo DiCaprio, Sean Penn, Benicio Del Toro",
+      "writer": "Paul Thomas Anderson, Thomas Pynchon",
+      "language": "English, Spanish",
+      "awards": "3 wins & 2 nominations total",
+      "poster_omdb": "https://m.media-amazon.com/images/M/MV5BMzBkZmQ0NjMtNTZlMy00ZjdlLTg5ODUtYWFlNGM0YzE3MTg0XkEyXkFqcGc@._V1_SX300.jpg",
+      "ratings": {
+        "imdb": "8.3/10",
+        "rotten_tomatoes": "96%",
+        "metacritic": "95/100",
+        "imdb_rating": "8.3",
+        "imdb_votes": "80,634"
+      },
+      "box_office": "$43,765,663"
+    },
+    "cinema_id": "SIFF_UPTOWN",
+    "showtimes": [
+      {
+        "show_date": "2025-11-01",
+        "show_time": "19:00"
+      },
+      {
+        "show_date": "2025-11-02",
+        "show_time": "11:30"
+      },
+      {
+        "show_date": "2025-11-02",
+        "show_time": "15:15"
+      },
+      {
+        "show_date": "2025-11-02",
+        "show_time": "19:00"
+      },
+      {
+        "show_date": "2025-11-03",
+        "show_time": "15:15"
+      },
+      {
+        "show_date": "2025-11-03",
+        "show_time": "19:00"
+      },
+      {
+        "show_date": "2025-11-04",
+        "show_time": "15:30"
+      },
+      {
+        "show_date": "2025-11-04",
+        "show_time": "19:15"
+      },
+      {
+        "show_date": "2025-11-05",
+        "show_time": "15:30"
+      }
+    ],
+    "scraped_at": "2025-11-01"
+  },
+  {
+    "movie": {
+      "title": "Rocky Horror Pole Show",
+      "url": "https://www.siff.net/cinema/in-theaters/rocky-horror-pole-show",
+      "image_url": "https://www.siff.net/images/CINEMA/2025/Film%20Jun-Dec/CIN_RockyHorrorPoleShow_1600x900.jpg",
+      "country": null,
+      "year": null,
+      "duration": null,
+      "director": null
+    },
+    "cinema_id": "SIFF_FILM_CENTER",
+    "showtimes": [
+      {
+        "show_date": "2025-11-01",
+        "show_time": "19:30"
+      }
+    ],
+    "scraped_at": "2025-11-01"
+  },
+  {
+    "movie": {
+      "title": "If I Had Legs I’d Kick You",
+      "url": "https://www.siff.net/cinema/in-theaters/if-i-had-legs-id-kick-you",
+      "image_url": "https://www.siff.net/images/CINEMA/2025/Film%20Jun-Dec/CINJ_IfIHadLegs_1600x900.jpg",
+      "country": "USA",
+      "year": 2024,
+      "duration": 113,
+      "director": "Mary Bronstein"
+    },
+    "cinema_id": "SIFF_UPTOWN",
+    "showtimes": [
+      {
+        "show_date": "2025-11-01",
+        "show_time": "19:45"
+      },
+      {
+        "show_date": "2025-11-02",
+        "show_time": "11:15"
+      },
+      {
+        "show_date": "2025-11-02",
+        "show_time": "14:10"
+      },
+      {
+        "show_date": "2025-11-02",
+        "show_time": "17:00"
+      },
+      {
+        "show_date": "2025-11-02",
+        "show_time": "19:45"
+      },
+      {
+        "show_date": "2025-11-03",
+        "show_time": "11:15"
+      },
+      {
+        "show_date": "2025-11-03",
+        "show_time": "14:10"
+      },
+      {
+        "show_date": "2025-11-03",
+        "show_time": "17:00"
+      },
+      {
+        "show_date": "2025-11-03",
+        "show_time": "19:45"
+      },
+      {
+        "show_date": "2025-11-04",
+        "show_time": "16:30"
+      },
+      {
+        "show_date": "2025-11-04",
+        "show_time": "19:30"
+      },
+      {
+        "show_date": "2025-11-05",
+        "show_time": "16:30"
+      },
+      {
+        "show_date": "2025-11-05",
+        "show_time": "19:15"
+      },
+      {
+        "show_date": "2025-11-06",
+        "show_time": "16:00"
+      },
+      {
+        "show_date": "2025-11-07",
+        "show_time": "16:15"
+      },
+      {
+        "show_date": "2025-11-07",
+        "show_time": "19:30"
+      }
+    ],
+    "scraped_at": "2025-11-01"
+  },
+  {
+    "movie": {
       "title": "Bugonia",
       "url": "https://www.siff.net/cinema/in-theaters/bugonia",
       "image_url": "https://www.siff.net/images/CINEMA/2025/Film%20Jun-Dec/CIN_Bugonia_1600x900.jpg",
@@ -27,14 +193,6 @@
     },
     "cinema_id": "SIFF_DOWNTOWN",
     "showtimes": [
-      {
-        "show_date": "2025-11-01",
-        "show_time": "15:10"
-      },
-      {
-        "show_date": "2025-11-01",
-        "show_time": "18:20"
-      },
       {
         "show_date": "2025-11-01",
         "show_time": "21:30"
@@ -104,72 +262,19 @@
   },
   {
     "movie": {
-      "title": "One Battle After Another",
-      "url": "https://www.siff.net/cinema/in-theaters/one-battle-after-another",
-      "image_url": "https://www.siff.net/images/CINEMA/2025/Film%20Jun-Dec/CIN_OneBattleAfterAnother_1600x900.jpg",
-      "country": "USA",
-      "year": 2025,
-      "duration": 161,
-      "director": "Paul Thomas Anderson",
-      "imdb_id": "tt30144839",
-      "plot": "When their evil enemy resurfaces after 16 years, a group of ex-revolutionaries reunite to rescue the daughter of one of their own.",
-      "genre": "Action, Crime, Drama",
-      "rated": "R",
-      "actors": "Leonardo DiCaprio, Sean Penn, Benicio Del Toro",
-      "writer": "Paul Thomas Anderson, Thomas Pynchon",
-      "language": "English, Spanish",
-      "awards": "3 wins & 2 nominations total",
-      "poster_omdb": "https://m.media-amazon.com/images/M/MV5BMzBkZmQ0NjMtNTZlMy00ZjdlLTg5ODUtYWFlNGM0YzE3MTg0XkEyXkFqcGc@._V1_SX300.jpg",
-      "ratings": {
-        "imdb": "8.3/10",
-        "rotten_tomatoes": "96%",
-        "metacritic": "95/100",
-        "imdb_rating": "8.3",
-        "imdb_votes": "80,634"
-      },
-      "box_office": "$43,765,663"
+      "title": "Cinema Dissection: Inglourious Basterds",
+      "url": "https://www.siff.net/programs-and-events/education/adult-film-education/film-talks/cinema-dissection-inglourious-basterds",
+      "image_url": "https://www.siff.net/images/EDUCATION/2025/EDU_CD-InglouriousBasterds_1600x900.jpg",
+      "country": null,
+      "year": null,
+      "duration": null,
+      "director": null
     },
-    "cinema_id": "SIFF_UPTOWN",
+    "cinema_id": "SIFF_FILM_CENTER",
     "showtimes": [
       {
-        "show_date": "2025-11-01",
-        "show_time": "15:15"
-      },
-      {
-        "show_date": "2025-11-01",
-        "show_time": "19:00"
-      },
-      {
         "show_date": "2025-11-02",
-        "show_time": "11:30"
-      },
-      {
-        "show_date": "2025-11-02",
-        "show_time": "15:15"
-      },
-      {
-        "show_date": "2025-11-02",
-        "show_time": "19:00"
-      },
-      {
-        "show_date": "2025-11-03",
-        "show_time": "15:15"
-      },
-      {
-        "show_date": "2025-11-03",
-        "show_time": "19:00"
-      },
-      {
-        "show_date": "2025-11-04",
-        "show_time": "15:30"
-      },
-      {
-        "show_date": "2025-11-04",
-        "show_time": "19:15"
-      },
-      {
-        "show_date": "2025-11-05",
-        "show_time": "15:30"
+        "show_time": "10:00"
       }
     ],
     "scraped_at": "2025-11-01"
@@ -196,14 +301,6 @@
     "cinema_id": "SIFF_UPTOWN",
     "showtimes": [
       {
-        "show_date": "2025-11-01",
-        "show_time": "16:30"
-      },
-      {
-        "show_date": "2025-11-01",
-        "show_time": "19:15"
-      },
-      {
         "show_date": "2025-11-02",
         "show_time": "11:00"
       },
@@ -266,127 +363,6 @@
       {
         "show_date": "2025-11-07",
         "show_time": "19:15"
-      }
-    ],
-    "scraped_at": "2025-11-01"
-  },
-  {
-    "movie": {
-      "title": "If I Had Legs I’d Kick You",
-      "url": "https://www.siff.net/cinema/in-theaters/if-i-had-legs-id-kick-you",
-      "image_url": "https://www.siff.net/images/CINEMA/2025/Film%20Jun-Dec/CINJ_IfIHadLegs_1600x900.jpg",
-      "country": "USA",
-      "year": 2024,
-      "duration": 113,
-      "director": "Mary Bronstein"
-    },
-    "cinema_id": "SIFF_UPTOWN",
-    "showtimes": [
-      {
-        "show_date": "2025-11-01",
-        "show_time": "17:00"
-      },
-      {
-        "show_date": "2025-11-01",
-        "show_time": "19:45"
-      },
-      {
-        "show_date": "2025-11-02",
-        "show_time": "11:15"
-      },
-      {
-        "show_date": "2025-11-02",
-        "show_time": "14:10"
-      },
-      {
-        "show_date": "2025-11-02",
-        "show_time": "17:00"
-      },
-      {
-        "show_date": "2025-11-02",
-        "show_time": "19:45"
-      },
-      {
-        "show_date": "2025-11-03",
-        "show_time": "11:15"
-      },
-      {
-        "show_date": "2025-11-03",
-        "show_time": "14:10"
-      },
-      {
-        "show_date": "2025-11-03",
-        "show_time": "17:00"
-      },
-      {
-        "show_date": "2025-11-03",
-        "show_time": "19:45"
-      },
-      {
-        "show_date": "2025-11-04",
-        "show_time": "16:30"
-      },
-      {
-        "show_date": "2025-11-04",
-        "show_time": "19:30"
-      },
-      {
-        "show_date": "2025-11-05",
-        "show_time": "16:30"
-      },
-      {
-        "show_date": "2025-11-05",
-        "show_time": "19:15"
-      },
-      {
-        "show_date": "2025-11-06",
-        "show_time": "16:00"
-      },
-      {
-        "show_date": "2025-11-07",
-        "show_time": "16:15"
-      },
-      {
-        "show_date": "2025-11-07",
-        "show_time": "19:30"
-      }
-    ],
-    "scraped_at": "2025-11-01"
-  },
-  {
-    "movie": {
-      "title": "Rocky Horror Pole Show",
-      "url": "https://www.siff.net/cinema/in-theaters/rocky-horror-pole-show",
-      "image_url": "https://www.siff.net/images/CINEMA/2025/Film%20Jun-Dec/CIN_RockyHorrorPoleShow_1600x900.jpg",
-      "country": null,
-      "year": null,
-      "duration": null,
-      "director": null
-    },
-    "cinema_id": "SIFF_FILM_CENTER",
-    "showtimes": [
-      {
-        "show_date": "2025-11-01",
-        "show_time": "19:30"
-      }
-    ],
-    "scraped_at": "2025-11-01"
-  },
-  {
-    "movie": {
-      "title": "Cinema Dissection: Inglourious Basterds",
-      "url": "https://www.siff.net/programs-and-events/education/adult-film-education/film-talks/cinema-dissection-inglourious-basterds",
-      "image_url": "https://www.siff.net/images/EDUCATION/2025/EDU_CD-InglouriousBasterds_1600x900.jpg",
-      "country": null,
-      "year": null,
-      "duration": null,
-      "director": null
-    },
-    "cinema_id": "SIFF_FILM_CENTER",
-    "showtimes": [
-      {
-        "show_date": "2025-11-02",
-        "show_time": "10:00"
       }
     ],
     "scraped_at": "2025-11-01"
