@@ -8,19 +8,16 @@ from typing import Dict, Any, Optional
 import sys
 import os
 
-parent_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-if parent_dir not in sys.path:
-    sys.path.insert(0, parent_dir)
-
-from scripts import config
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from config import main_config
 
 
 class OMDbClient:
     """Client for interacting with OMDb API"""
     
     def __init__(self):
-        self.api_key = config.OMDB_API_KEY
-        self.api_url = config.OMDB_API_URL
+        self.api_key = main_config.OMDB_API_KEY
+        self.api_url = main_config.OMDB_API_URL
         self.cache = {}  # Simple cache to avoid duplicate API calls
     
     def search_by_title_year(self, title: str, year: Optional[int] = None) -> Optional[Dict[str, Any]]:

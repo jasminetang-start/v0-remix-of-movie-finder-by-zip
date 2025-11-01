@@ -1,0 +1,73 @@
+name: Daily Movie Scraper
+
+on:
+  schedule:
+    # Run at 6:00 AM UTC every day (11 PM PST / 10 PM PDT)
+    - cron: '0 6 * * *'
+  
+  # Allow manual trigger from GitHub Actions tab
+  workflow_dispatch:
+    inputs:
+      scrapers:
+        description: 'Scrapers to run (comma-separated: siff,viff or leave empty for all)'
+        required: false
+        default: ''
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: 🐍 Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+          cache: 'pip'
+      
+      - name: 🌐 Install Chrome
+        uses: browser-actions/setup-chrome@v1
+        with:
+          chrome-version: stable
+      
+      - name: 📦 Install dependencies
+        run: |
+          cd scraper
+          pip install -r requirements.txt
+      
+      - name: 🎬 Run scraper
+        env:
+          OMDB_API_KEY: ${{ secrets.OMDB_API_KEY }}
+        run: |
+          cd scraper
+          if [ -n "${{ github.event.inputs.scrapers }}" ]; then
+            # Manual trigger with specific scrapers
+            python main.py --scrapers ${{ github.event.inputs.scrapers }}
+          else
+            # Run all enabled scrapers
+            python main.py
+          fi
+      
+      - name: 💾 Commit and push if changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add data/
+          
+          # Check if there are changes
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "🤖 Auto-update movie data - $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git push
+          fi
+      
+      - name: 📊 Upload artifacts (for debugging)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: scraper-output-${{ github.run_number }}
+          path: data/
+          retention-days: 7
